@@ -1,0 +1,29 @@
+<div class="content-body">
+    <div class="form-wrapper">
+      <div class="logo">
+        <img src="https://www.pngitem.com/pimgs/m/523-5233379_employee-management-system-logo-hd-png-download.png" alt="Logo" />
+      </div>
+      <h1 class="heading text-center">Login To EMS</h1>
+      <h3 class="sub-heading text-center">EMS</h3>
+
+      <form>
+        <div class="field">
+          <input type="email" name="email" class="input" placeholder=" " [(ngModel)]="loginObj.adminId" />
+          <label for="email" class="label" >admin id</label>
+        </div>
+        <div class="field mt-2">
+            <input type="password" name="email" class="input" placeholder=" " [(ngModel)]="loginObj.pswd"/>
+            <label for="password" class="label" >password</label>
+        </div>
+
+        <div class="login-button">
+            <button class="btn btn-outline-primary btn-sm" (click)="login()">Login</button>
+        </div>
+
+        <div class="forgot-button">
+            <button class="btn border-none text-primary" (click)="forgot()">Forgot acc details?</button>
+        </div>
+        
+      </form>
+    </div>
+  </div>
